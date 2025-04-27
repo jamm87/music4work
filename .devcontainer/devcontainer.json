@@ -1,0 +1,20 @@
+{
+    "name": "Python 3",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "features": {
+      "ghcr.io/devcontainers/features/python-packages:1": {
+        "packages": ["pandas", "requests", "beautifulsoup4"]
+      }
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-python.python",
+          "ms-python.vscode-pylance"
+        ]
+      }
+    },
+    "forwardPorts": [],
+    "postCreateCommand": "pip install pandas requests beautifulsoup4"
+  }
+  
